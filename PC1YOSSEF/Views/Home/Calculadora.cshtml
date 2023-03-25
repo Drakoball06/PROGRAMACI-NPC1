@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Calculadora de Pagos de Tarjeta de Crédito";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="form-group">
+    <label class="control-label col-md-2">Número de Tarjeta:</label>
+    <div class="col-md-10">
+        <p>@ViewBag.NumeroTarjeta</p>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-2">Fecha de Vencimiento del Pago:</label>
+    <div class="col-md-10">
+        <p>@ViewBag.FechaVencimiento</p>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-2">Monto a Pagar:</label>
+    <div class="col-md-10">
+        <p>@ViewBag.MontoPagar</p>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-2">Mora:</label>
+    <div class="col-md-10">
+        <p>@ViewBag.Mora</p>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-2">Total a Pagar:</label>
+    <div class="col-md-10">
+        <p>@ViewBag.TotalPagar</p>
+    </div>
+</div>
+
+<a href="/" class="btn btn-primary">Regresar</a>

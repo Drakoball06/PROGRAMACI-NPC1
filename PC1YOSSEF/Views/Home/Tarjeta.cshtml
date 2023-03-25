@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Ingresar Pago de Tarjeta de Crédito";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form asp-controller="Home" asp-action="Calculadora" method="post">
+    <div class="form-group">
+        <label class="control-label col-md-2">Número de Tarjeta:</label>
+        <div class="col-md-10">
+            <input type="text" name="numeroTarjeta" class="form-control" required />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Fecha de Vencimiento del Pago:</label>
+        <div class="col-md-10">
+            <input type="date" name="fechaVencimiento" class="form-control" required />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Monto a Pagar:</label>
+        <div class="col-md-10">
+            <input type="number" name="montoPagar" class="form-control" required />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular Pago</button>
+</form>
+
+
+
+
+
+
+
